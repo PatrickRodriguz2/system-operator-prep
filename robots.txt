@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://patrickrodriguz2.github.io/system-operator-prep/sitemap.xml

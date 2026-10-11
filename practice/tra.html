@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NERC System Operator exam practice questions: Transmission (free)</title>
+<meta name="description" content="5 free practice questions with explained answers on transmission for the NERC System Operator Certification exams.">
+<meta name="apple-itunes-app" content="app-id=6814519820">
+<link rel="canonical" href="https://patrickrodriguz2.github.io/system-operator-prep/practice/tra.html">
+<style>
+  :root { --bg:#fff; --ink:#0b1220; --soft:#4d5665; --rule:#e0e4ea; --accent:#0f7fbf; --tint:#f2f7fb; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#06101a; --ink:#e6eaf1; --soft:#a3aec0; --rule:#1d2b3a; --accent:#1EA0EC; --tint:#0d1a26; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; -webkit-text-size-adjust:100%; }
+  main { max-width:46rem; margin:0 auto; padding:3rem 1.25rem 5rem; }
+  h1 { font-size:2rem; line-height:1.15; margin:0 0 .6rem; letter-spacing:-.02em; }
+  h2 { font-size:1.15rem; margin:2.2rem 0 .5rem; }
+  .eyebrow { font-size:.8rem; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); margin:0 0 1rem; font-weight:600; }
+  .lede { font-size:1.08rem; color:var(--soft); margin:0 0 1.6rem; }
+  .q { background:var(--tint); border:1px solid var(--rule); border-radius:14px; padding:1rem 1.15rem; margin:1.2rem 0; }
+  .q .n { font-size:.78rem; letter-spacing:.08em; text-transform:uppercase; color:var(--soft); margin:0 0 .3rem; }
+  .q p { margin:.2rem 0 .7rem; } .q ol { list-style:upper-alpha; margin:0 0 .8rem; padding-left:1.4rem; } .q li { margin-bottom:.35rem; }
+  summary { cursor:pointer; color:var(--accent); font-weight:600; }
+  .ans { margin:.6rem 0 0; } .ref { font-size:.85rem; color:var(--soft); }
+  .cta { background:var(--tint); border:1px solid var(--rule); border-radius:14px; padding:1rem 1.15rem; margin:2rem 0; }
+  .cta a.btn { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; padding:.6rem 1.1rem; border-radius:10px; font-weight:600; }
+  ul.list { padding-left:1.2rem; } a { color:var(--accent); } hr { border:0; border-top:1px solid var(--rule); margin:2.4rem 0; }
+  footer { font-size:.87rem; color:var(--soft); } .links a { margin-right:1.2rem; }
+</style>
+</head>
+<body>
+<main>
+<p class="eyebrow">Free sample questions</p>
+<h1>Transmission: practice questions</h1>
+<p class="lede">The wires side: protection, voltage and reactive control, switching, equipment and operating limits. Domain 2 of the NERC System Operator Certification content outline. Each answer is explained and cites its source.</p>
+<div class="q" id="q1">
+<p class="n">Question 1 &middot; Protection and Control</p>
+<p>A line Fault is cleared correctly and promptly by the faulted line&#x27;s own relaying, but a transformer&#x27;s protection at the same station also trips the transformer. How is the transformer operation classified?</p>
+<ol><li>Unnecessary Trip - During Fault by the transformer protection</li><li>Slow Trip - During Fault by the line protection</li><li>Failure to Trip - During Fault by the transformer protection</li><li>Correct backup operation, because the Fault was on another Element</li></ol>
+<details><summary>Show the answer</summary>
+<p class="ans"><strong>Answer: A.</strong> The faulted line&#x27;s Composite Protection System cleared the Fault without any outside help, so the transformer trip was not needed, and an unnecessary Composite Protection System operation for a Fault on another Element is an Unnecessary Trip - During Fault. Calling it backup fails because a remote or local backup operation is only correct when the faulted Element&#x27;s protection fails or is slow.</p>
+<p class="ref">Reference: NERC Glossary - Misoperation; PRC-004-6 Supplemental Material</p></details>
+</div><div class="q" id="q2">
+<p class="n">Question 2 &middot; Voltage and Reactive</p>
+<p>A transformer is carrying 180 MW and 80 MVAr. What is its apparent power loading?</p>
+<ol><li>197 MVA</li><li>260 MVA</li><li>161 MVA</li><li>173 MVA</li></ol>
+<details><summary>Show the answer</summary>
+<p class="ans"><strong>Answer: A.</strong> S = sqrt(180^2 + 80^2) = sqrt(32,400 + 6,400) = sqrt(38,800) = 197 MVA. Adding 180 and 80 arithmetically gives 260 MVA and ignores that the two legs of the power triangle sit 90 degrees apart.</p>
+<p class="ref">Reference: Power system fundamentals</p></details>
+</div><div class="q" id="q3">
+<p class="n">Question 3 &middot; Electrical Fundamentals</p>
+<p>A transmission line section has a series resistance of 6 Ω and a series reactance of 8 Ω. What is the magnitude of its series impedance?</p>
+<ol><li>10.0 Ω</li><li>14.0 Ω</li><li>48.0 Ω</li><li>2.0 Ω</li></ol>
+<details><summary>Show the answer</summary>
+<p class="ans"><strong>Answer: A.</strong> Resistance and reactance are 90 degrees apart, so they combine as the square root of the sum of the squares: the square root of (36 + 64) is 10.0 Ω. Adding the two values arithmetically gives 14.0 Ω and overstates the impedance.</p>
+<p class="ref">Reference: Power system fundamentals - series impedance</p></details>
+</div><div class="q" id="q4">
+<p class="n">Question 4 &middot; Reconfiguration and Switching</p>
+<p>An air-break switch is fitted with an interrupter rated for magnetizing and charging current. Which operation is it suitable for?</p>
+<ol><li>Dropping an unloaded transformer off the bus</li><li>Clearing a fault on the transformer&#x27;s low-side bus</li><li>Opening a line carrying 90 MW of through flow</li><li>Breaking the field current of a synchronous condenser</li></ol>
+<details><summary>Show the answer</summary>
+<p class="ans"><strong>Answer: A.</strong> An interrupter of that class is sized for the small magnetizing current of an unloaded transformer and for line charging, so dropping an unloaded transformer is within its duty. Fault current and tens of megawatts of through flow must be broken by a circuit breaker, which carries an interrupting rating for them.</p>
+<p class="ref">Reference: Control-room switching practice - load-break devices</p></details>
+</div><div class="q" id="q5">
+<p class="n">Question 5 &middot; Operating Limits</p>
+<p>The summer Thermal Rating of a 230 kV line is set by the current at which the conductor sags to its minimum legal clearance rather than by conductor damage. How should the operator treat that value?</p>
+<ol><li>As a valid Thermal Rating, since sag limits are part of it</li><li>As a seasonal advisory that does not bind Real-time loading</li><li>As a voltage limit rather than a limit on line current</li><li>As a stability limit applied to the line&#x27;s power flow</li></ol>
+<details><summary>Show the answer</summary>
+<p class="ans"><strong>Answer: A.</strong> The Glossary defines a Thermal Rating as the maximum current a line can conduct over a specified period before permanent overheating damage or before sagging to the point of violating public safety requirements, so a clearance-driven value is a Thermal Rating. It binds Real-time loading the same as a conductor-driven value.</p>
+<p class="ref">Reference: NERC Glossary - Thermal Rating</p></details>
+</div>
+<div class="cta"><p><strong>Want the whole bank?</strong> Power Grid Operator Exam Prep has 1,224 questions, timed mock papers and a control-room simulator.
+Free to try: 50 practice questions, one full mock paper and the whole Library. Full Access is one in-app purchase, no subscription.</p>
+<p><a class="btn" href="https://apps.apple.com/app/id6814519820">View on the App Store</a></p></div>
+<h2>Other domains</h2>
+<ul class="list"><li><a href="rdb.html">Resource and Demand Balancing</a></li><li><a href="prep.html">Emergency Preparedness</a></li><li><a href="resp.html">Emergency Response</a></li><li><a href="con.html">Contingency Analysis and Reliability</a></li><li><a href="com.html">Communications and Data</a></li></ul>
+<hr>
+<p class="links"><a href="https://patrickrodriguz2.github.io/system-operator-prep/">About the app</a><a href="https://patrickrodriguz2.github.io/system-operator-prep/privacy.html">Privacy policy</a><a href="https://patrickrodriguz2.github.io/system-operator-prep/support.html">Support</a></p>
+<footer><p>Power Grid Operator Exam Prep is an independent study aid. It is not affiliated with, endorsed by, or connected to the North American Electric Reliability Corporation, its Regional Entities, or Pearson VUE. NERC, the credential names and the examination codes are used only to identify the examinations this app prepares candidates for. All questions, reference cards and generated displays are original work.</p></footer>
+</main>
+</body>
+</html>

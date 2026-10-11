@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NERC System Operator exam practice questions: Contingency Analysis and Reliability (free)</title>
+<meta name="description" content="5 free practice questions with explained answers on contingency analysis and reliability for the NERC System Operator Certification exams.">
+<meta name="apple-itunes-app" content="app-id=6814519820">
+<link rel="canonical" href="https://patrickrodriguz2.github.io/system-operator-prep/practice/con.html">
+<style>
+  :root { --bg:#fff; --ink:#0b1220; --soft:#4d5665; --rule:#e0e4ea; --accent:#0f7fbf; --tint:#f2f7fb; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#06101a; --ink:#e6eaf1; --soft:#a3aec0; --rule:#1d2b3a; --accent:#1EA0EC; --tint:#0d1a26; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; -webkit-text-size-adjust:100%; }
+  main { max-width:46rem; margin:0 auto; padding:3rem 1.25rem 5rem; }
+  h1 { font-size:2rem; line-height:1.15; margin:0 0 .6rem; letter-spacing:-.02em; }
+  h2 { font-size:1.15rem; margin:2.2rem 0 .5rem; }
+  .eyebrow { font-size:.8rem; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); margin:0 0 1rem; font-weight:600; }
+  .lede { font-size:1.08rem; color:var(--soft); margin:0 0 1.6rem; }
+  .q { background:var(--tint); border:1px solid var(--rule); border-radius:14px; padding:1rem 1.15rem; margin:1.2rem 0; }
+  .q .n { font-size:.78rem; letter-spacing:.08em; text-transform:uppercase; color:var(--soft); margin:0 0 .3rem; }
+  .q p { margin:.2rem 0 .7rem; } .q ol { list-style:upper-alpha; margin:0 0 .8rem; padding-left:1.4rem; } .q li { margin-bottom:.35rem; }
+  summary { cursor:pointer; color:var(--accent); font-weight:600; }
+  .ans { margin:.6rem 0 0; } .ref { font-size:.85rem; color:var(--soft); }
+  .cta { background:var(--tint); border:1px solid var(--rule); border-radius:14px; padding:1rem 1.15rem; margin:2rem 0; }
+  .cta a.btn { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; padding:.6rem 1.1rem; border-radius:10px; font-weight:600; }
+  ul.list { padding-left:1.2rem; } a { color:var(--accent); } hr { border:0; border-top:1px solid var(--rule); margin:2.4rem 0; }
+  footer { font-size:.87rem; color:var(--soft); } .links a { margin-right:1.2rem; }
+</style>
+</head>
+<body>
+<main>
+<p class="eyebrow">Free sample questions</p>
+<h1>Contingency Analysis and Reliability: practice questions</h1>
+<p class="lede">Studying the next contingency before it happens, and operating inside SOLs and IROLs. Domain 5 of the NERC System Operator Certification content outline. Each answer is explained and cites its source.</p>
+<div class="q" id="q1">
+<p class="n">Question 1 &middot; Contingency Analysis</p>
+<p>A Reliability Coordinator performs its next-day Operational Planning Analysis for its Wide Area. Which exceedances must that analysis allow it to identify?</p>
+<ol><li>System Operating Limits and Interconnection Reliability Operating Limits</li><li>Contingency Reserve shortfalls and Energy Emergency Alert declarations</li><li>Interchange schedule mismatches between Adjacent Balancing Authorities</li><li>Reporting ACE excursions and frequency bias setting errors</li></ol>
+<details><summary>Show the answer</summary>
+<p class="ans"><strong>Answer: A.</strong> IRO-008-3 R1 requires the Reliability Coordinator&#x27;s Operational Planning Analysis to assess whether planned operations for the next day will exceed System Operating Limits and Interconnection Reliability Operating Limits within its Wide Area. A Transmission Operator&#x27;s own analysis under TOP-002-4 R1 is scoped to SOLs in its Transmission Operator Area.</p>
+<p class="ref">Reference: IRO-008-3 R1; TOP-002-4 R1</p></details>
+</div><div class="q" id="q2">
+<p class="n">Question 2 &middot; Network Analysis Tools</p>
+<p>A bus tie breaker at a 230 kV station opens, splitting the station into two separately energized sections. Which energy management system function makes the State Estimator represent the station as two buses?</p>
+<ol><li>The topology processor, which builds connectivity from switch status</li><li>The alarm processor, which time-stamps the breaker status change</li><li>The load forecaster, which redistributes station demand by section</li><li>The generation control program, which rebalances area output</li></ol>
+<details><summary>Show the answer</summary>
+<p class="ans"><strong>Answer: A.</strong> The topology processor converts breaker and switch status into the bus-branch model the estimator solves, so a bus split becomes two electrical buses. The alarm processor only announces the status change; it does not rebuild the model.</p>
+<p class="ref">Reference: Energy management system fundamentals</p></details>
+</div><div class="q" id="q3">
+<p class="n">Question 3 &middot; Response to Contingency Analysis Results</p>
+<p>Line A carries 420 MW and line B 360 MW. Contingency analysis studies the loss of line B, for which the line-outage distribution factor onto line A is 0.35. What flow does the study put on line A?</p>
+<ol><li>546 MW</li><li>780 MW</li><li>294 MW</li><li>126 MW</li></ol>
+<details><summary>Show the answer</summary>
+<p class="ans"><strong>Answer: A.</strong> A line-outage distribution factor is the share of the outaged line&#x27;s pre-Contingency flow that redistributes onto the monitored line, so line A picks up 0.35 x 360 = 126 MW on top of the 420 MW it already carries, giving 546 MW. Adding all 360 MW of line B&#x27;s flow gives 780 MW and assumes line A is the only remaining path.</p>
+<p class="ref">Reference: Power system fundamentals; Control-room operating practice</p></details>
+</div><div class="q" id="q4">
+<p class="n">Question 4 &middot; System Operating Limits</p>
+<p>A Transmission Operator is setting new System Operating Limits for several 230 kV paths in its area. Whose methodology governs how those limits are determined?</p>
+<ol><li>Its Reliability Coordinator&#x27;s SOL methodology</li><li>Its own SOL methodology, documented under FAC-011-4</li><li>The Planning Coordinator&#x27;s Planning Assessment criteria</li><li>The Transmission Owner&#x27;s Facility Ratings methodology</li></ol>
+<details><summary>Show the answer</summary>
+<p class="ans"><strong>Answer: A.</strong> FAC-014-3 R2 requires each Transmission Operator to establish SOLs for its portion of the Reliability Coordinator Area in accordance with its Reliability Coordinator&#x27;s SOL methodology. FAC-011-4 R1 places the duty to hold a documented SOL methodology on the Reliability Coordinator alone, so the Transmission Operator has none of its own.</p>
+<p class="ref">Reference: FAC-014-3 R2; FAC-011-4 R1</p></details>
+</div><div class="q" id="q5">
+<p class="n">Question 5 &middot; Interconnection Reliability Operating Limits</p>
+<p>A Reliability Coordinator is documenting Tv values for four newly established IROLs. Which proposed value conflicts with the NERC Glossary?</p>
+<ol><li>45 minutes</li><li>30 minutes</li><li>20 minutes</li><li>10 minutes</li></ol>
+<details><summary>Show the answer</summary>
+<p class="ans"><strong>Answer: A.</strong> The Glossary states that each IROL&#x27;s Tv shall be less than or equal to 30 minutes, so 45 minutes cannot be assigned. A Tv of exactly 30 minutes is the longest value the definition permits, which makes it acceptable rather than a violation.</p>
+<p class="ref">Reference: NERC Glossary - Interconnection Reliability Operating Limit Tv (IROL Tv)</p></details>
+</div>
+<div class="cta"><p><strong>Want the whole bank?</strong> Power Grid Operator Exam Prep has 1,224 questions, timed mock papers and a control-room simulator.
+Free to try: 50 practice questions, one full mock paper and the whole Library. Full Access is one in-app purchase, no subscription.</p>
+<p><a class="btn" href="https://apps.apple.com/app/id6814519820">View on the App Store</a></p></div>
+<h2>Other domains</h2>
+<ul class="list"><li><a href="rdb.html">Resource and Demand Balancing</a></li><li><a href="tra.html">Transmission</a></li><li><a href="prep.html">Emergency Preparedness</a></li><li><a href="resp.html">Emergency Response</a></li><li><a href="com.html">Communications and Data</a></li></ul>
+<hr>
+<p class="links"><a href="https://patrickrodriguz2.github.io/system-operator-prep/">About the app</a><a href="https://patrickrodriguz2.github.io/system-operator-prep/privacy.html">Privacy policy</a><a href="https://patrickrodriguz2.github.io/system-operator-prep/support.html">Support</a></p>
+<footer><p>Power Grid Operator Exam Prep is an independent study aid. It is not affiliated with, endorsed by, or connected to the North American Electric Reliability Corporation, its Regional Entities, or Pearson VUE. NERC, the credential names and the examination codes are used only to identify the examinations this app prepares candidates for. All questions, reference cards and generated displays are original work.</p></footer>
+</main>
+</body>
+</html>
