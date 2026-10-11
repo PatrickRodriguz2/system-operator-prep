@@ -1,85 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NERC System Operator exam practice questions: Resource and Demand Balancing (free)</title>
-<meta name="description" content="5 free practice questions with explained answers on resource and demand balancing for the NERC System Operator Certification exams.">
-<meta name="apple-itunes-app" content="app-id=6814519820">
-<link rel="canonical" href="https://patrickrodriguz2.github.io/system-operator-prep/practice/rdb.html">
-<style>
-  :root { --bg:#fff; --ink:#0b1220; --soft:#4d5665; --rule:#e0e4ea; --accent:#0f7fbf; --tint:#f2f7fb; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg:#06101a; --ink:#e6eaf1; --soft:#a3aec0; --rule:#1d2b3a; --accent:#1EA0EC; --tint:#0d1a26; }
-  }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink);
-    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; -webkit-text-size-adjust:100%; }
-  main { max-width:46rem; margin:0 auto; padding:3rem 1.25rem 5rem; }
-  h1 { font-size:2rem; line-height:1.15; margin:0 0 .6rem; letter-spacing:-.02em; }
-  h2 { font-size:1.15rem; margin:2.2rem 0 .5rem; }
-  .eyebrow { font-size:.8rem; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); margin:0 0 1rem; font-weight:600; }
-  .lede { font-size:1.08rem; color:var(--soft); margin:0 0 1.6rem; }
-  .q { background:var(--tint); border:1px solid var(--rule); border-radius:14px; padding:1rem 1.15rem; margin:1.2rem 0; }
-  .q .n { font-size:.78rem; letter-spacing:.08em; text-transform:uppercase; color:var(--soft); margin:0 0 .3rem; }
-  .q p { margin:.2rem 0 .7rem; } .q ol { list-style:upper-alpha; margin:0 0 .8rem; padding-left:1.4rem; } .q li { margin-bottom:.35rem; }
-  summary { cursor:pointer; color:var(--accent); font-weight:600; }
-  .ans { margin:.6rem 0 0; } .ref { font-size:.85rem; color:var(--soft); }
-  .cta { background:var(--tint); border:1px solid var(--rule); border-radius:14px; padding:1rem 1.15rem; margin:2rem 0; }
-  .cta a.btn { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; padding:.6rem 1.1rem; border-radius:10px; font-weight:600; }
-  ul.list { padding-left:1.2rem; } a { color:var(--accent); } hr { border:0; border-top:1px solid var(--rule); margin:2.4rem 0; }
-  footer { font-size:.87rem; color:var(--soft); } .links a { margin-right:1.2rem; }
-</style>
-</head>
-<body>
-<main>
-<p class="eyebrow">Free sample questions</p>
-<h1>Resource and Demand Balancing: practice questions</h1>
-<p class="lede">Keeping generation, load and interchange in balance: schedules, reserves, AGC, ACE and frequency. Domain 1 of the NERC System Operator Certification content outline. Each answer is explained and cites its source.</p>
-<div class="q" id="q1">
-<p class="n">Question 1 &middot; Interchange Scheduling and Coordination</p>
-<p>Outside the Western Electricity Coordinating Council (WECC) Region, a Request for Interchange arrives at 13:52 for a transfer whose ramp starts at 14:00. What time classification does the resulting Arranged Interchange receive?</p>
-<ol><li>Late, because it arrived inside 15 minutes of ramp start</li><li>On-time, because it arrived before the ramp start</li><li>After the Fact, because it arrived within the transfer hour</li><li>Emergency, because it arrived inside the assessment window</li></ol>
-<details><summary>Show the answer</summary>
-<p class="ans"><strong>Answer: A.</strong> The timing table for Interconnections other than WECC classes a submittal less than 15 minutes before ramp start, and less than one hour after the start time, as Late. On-time needs more than 15 minutes before ramp start, and After the Fact needs more than one hour after the start time.</p>
-<p class="ref">Reference: INT-006-5 timing table (non-WECC); NERC Glossary - After the Fact</p></details>
-</div><div class="q" id="q2">
-<p class="n">Question 2 &middot; Reserves (Spinning and Non-Spinning)</p>
-<p>A Balancing Authority can fully remove 60 MW of customer Load from the system within the Disturbance recovery period following a contingency event. How may this 60 MW be classified?</p>
-<ol><li>As Operating Reserve - Spinning, since that portion admits fully removable Load</li><li>As Regulating Reserve, since Load under direct control behaves like generation</li><li>As Non-Spinning Reserve, since the spinning portion admits generation only</li><li>As Demand-Side Management standing outside every Operating Reserve category</li></ol>
-<details><summary>Show the answer</summary>
-<p class="ans"><strong>Answer: A.</strong> The Glossary builds Operating Reserve - Spinning from two sources: generation synchronized to the system, or Load fully removable from the system within the Disturbance recovery period. The second source covers this 60 MW, so the spinning portion is not limited to generation.</p>
-<p class="ref">Reference: NERC Glossary - Operating Reserve - Spinning</p></details>
-</div><div class="q" id="q3">
-<p class="n">Question 3 &middot; Automatic Generation Control</p>
-<p>A large unit trips and Interconnection frequency falls. Governor action on the remaining units has arrested the decline. Which control then works to return frequency toward 60.00 Hz?</p>
-<ol><li>Automatic Generation Control in the deficient area, raising unit basepoints</li><li>Governor droop on the remaining units, acting a second time on the new frequency</li><li>Under-frequency load shedding relays, picking up the remaining imbalance</li><li>The Frequency Bias Setting, adding megawatts directly to the units on control</li></ol>
-<details><summary>Show the answer</summary>
-<p class="ans"><strong>Answer: A.</strong> Governor response is primary control and only arrests the decline, leaving frequency at a lower steady value; Automatic Generation Control is the secondary control that then raises regulating unit basepoints in the deficient Balancing Authority and drives Reporting ACE, and with it frequency, back toward schedule. The Frequency Bias Setting is a term in the Reporting ACE calculation, not a source of megawatts.</p>
-<p class="ref">Reference: NERC Glossary - Automatic Generation Control, Control Performance Standard; Power system fundamentals</p></details>
-</div><div class="q" id="q4">
-<p class="n">Question 4 &middot; Area Control Error</p>
-<p>A Balancing Authority has a Frequency Bias Setting of -60 MW/0.1 Hz. Actual Net Interchange is 1,150 MW, Scheduled Net Interchange is 1,200 MW, Actual Frequency is 59.97 Hz and Scheduled Frequency is 60.00 Hz. With no meter error, what is its Reporting ACE?</p>
-<ol><li>-68 MW</li><li>-32 MW</li><li>-50 MW</li><li>+68 MW</li></ol>
-<details><summary>Show the answer</summary>
-<p class="ans"><strong>Answer: A.</strong> The interchange term is 1,150 - 1,200 = -50 MW. The bias term is 10 x (-60) x (59.97 - 60.00) = -600 x -0.03 = +18 MW, and the equation subtracts it: -50 - 18 = -68 MW. Adding the bias term instead of subtracting it gives the -32 MW trap.</p>
-<p class="ref">Reference: NERC Glossary - Reporting ACE, Frequency Bias Setting</p></details>
-</div><div class="q" id="q5">
-<p class="n">Question 5 &middot; Frequency</p>
-<p>A Time Error Correction is under way and Scheduled Frequency has been offset to 60.02 Hz. Actual Frequency is 59.99 Hz. What is the Frequency Error?</p>
-<ol><li>-0.03 Hz</li><li>+0.03 Hz</li><li>-0.01 Hz</li><li>+0.01 Hz</li></ol>
-<details><summary>Show the answer</summary>
-<p class="ans"><strong>Answer: A.</strong> Frequency Error is Actual Frequency minus Scheduled Frequency: 59.99 - 60.02 = -0.03 Hz. Using 60.00 Hz rather than the offset Scheduled Frequency gives -0.01 Hz, which is the usual error during a Time Error Correction.</p>
-<p class="ref">Reference: NERC Glossary - Frequency Error, Scheduled Frequency, Time Error Correction</p></details>
-</div>
-<div class="cta"><p><strong>Want the whole bank?</strong> Power Grid Operator Exam Prep has 1,224 questions, timed mock papers and a control-room simulator.
-Free to try: 50 practice questions, one full mock paper and the whole Library. Full Access is one in-app purchase, no subscription.</p>
-<p><a class="btn" href="https://apps.apple.com/app/id6814519820">View on the App Store</a></p></div>
-<h2>Other domains</h2>
-<ul class="list"><li><a href="tra.html">Transmission</a></li><li><a href="prep.html">Emergency Preparedness</a></li><li><a href="resp.html">Emergency Response</a></li><li><a href="con.html">Contingency Analysis and Reliability</a></li><li><a href="com.html">Communications and Data</a></li></ul>
-<hr>
-<p class="links"><a href="https://patrickrodriguz2.github.io/system-operator-prep/">About the app</a><a href="https://patrickrodriguz2.github.io/system-operator-prep/privacy.html">Privacy policy</a><a href="https://patrickrodriguz2.github.io/system-operator-prep/support.html">Support</a></p>
-<footer><p>Power Grid Operator Exam Prep is an independent study aid. It is not affiliated with, endorsed by, or connected to the North American Electric Reliability Corporation, its Regional Entities, or Pearson VUE. NERC, the credential names and the examination codes are used only to identify the examinations this app prepares candidates for. All questions, reference cards and generated displays are original work.</p></footer>
-</main>
-</body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Grid Prep has moved to gridprep.app</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://gridprep.app/practice/">
+<meta name="robots" content="noindex, follow">
+<meta http-equiv="refresh" content="0; url=https://gridprep.app/practice/">
+<script>location.replace('https://gridprep.app/practice/' + location.hash)</script>
+</head><body style="font:16px/1.5 -apple-system,Segoe UI,sans-serif;margin:3rem 1.25rem">
+<p>Grid Prep has moved to <a href="https://gridprep.app/practice/">https://gridprep.app/practice/</a>.</p>
+</body></html>
